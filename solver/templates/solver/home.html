@@ -1,0 +1,35 @@
+{% load static %}
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/handsontable@latest/dist/handsontable.full.min.css">
+        <link rel="stylesheet" type="text/css" href="https://handsontable.com/static/css/main.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+        #table{
+            margin: 20px 20px;
+        }
+        #answer{
+            margin-left:20px;
+        }
+     
+    
+    </style>
+
+    </head>
+    <body>
+       <h1>SUDOKU SOLVER</h1>
+       <h3> Enter your input numbers in the below table</h3>
+       <div id="table"></div>
+       <button type = 'submit' id = 'save_conf' class="btn btn-success bt" style = "margin-left: 200px; margin-top: 10px;">Submit</button>
+   
+       <div id="answer"></div>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-handsontable/0.10.2/jquery.handsontable.full.js"></script>
+       <script src="https://cdn.jsdelivr.net/npm/handsontable@latest/dist/handsontable.full.min.js"></script>
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+       <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+       
+       <script src="{% static 'solver/home.js' %}"></script>
+    </body>
+</html>

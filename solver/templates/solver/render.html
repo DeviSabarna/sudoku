@@ -1,0 +1,11 @@
+<h3>Please find the answer</h3>
+    <table style="border:1px solid black;margin-top:15px;width:450">
+        
+        {% for n in data %}
+            <tr>
+            {% for k in n %}
+                <td class="cell" style="width:50;border:1px solid black;">{{ k }}</td>
+            {% endfor %}
+            </tr>
+        {% endfor %}
+        </table>
