@@ -14,6 +14,7 @@ $.ajax({
   dataType: "json",
   success: function (data) {
       // any process in data
+     
      $('#answer').html(data);
   },
   failure: function () {

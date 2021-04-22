@@ -11,10 +11,15 @@
         #answer{
             margin-left:20px;
         }
-        #answer > td:first-child {
-            border-left:solid;
+        #answer tr:nth-of-type(3n) td {
+            border-bottom: 3px solid #f00;
         }
-
+        #answer td:nth-child(3n),th:nth-child(3n) {
+           border-right: solid 3px red;
+        }
+        #answer td:first-child, th:first-child {
+            border-left: solid 3px red;
+       }
     
     </style>
 
